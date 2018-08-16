@@ -1,0 +1,37 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "M0B+RAHAi/TTDayAxZMApDJt9JM=",
+			"path": "cloud.google.com/go/civil",
+			"revision": "935187f09a548ef7535cac721d0ace6a07b949d4",
+			"revisionTime": "2018-08-15T12:55:58Z"
+		},
+		{
+			"checksumSHA1": "7e3cfL0NEcUzNTZyFEY4Sf10Y+k=",
+			"path": "github.com/denisenkom/go-mssqldb",
+			"revision": "242fa5aa1b45aeb9fcdfeee88822982e3f548e22",
+			"revisionTime": "2018-07-07T23:57:34Z"
+		},
+		{
+			"checksumSHA1": "4y7Hv8IPGF177L3VM0LKSqGLfAc=",
+			"path": "github.com/denisenkom/go-mssqldb/internal/cp",
+			"revision": "242fa5aa1b45aeb9fcdfeee88822982e3f548e22",
+			"revisionTime": "2018-07-07T23:57:34Z"
+		},
+		{
+			"checksumSHA1": "/cYPn+lbJ7DZLcrOCEg5KmVvspg=",
+			"path": "github.com/jessevdk/go-flags",
+			"revision": "1c38ed7ad0cc3d9e66649ac398c30e45f395c4eb",
+			"revisionTime": "2018-03-31T12:42:32Z"
+		},
+		{
+			"checksumSHA1": "MCeXr2RNeiG1XG6V+er1OR0qyeo=",
+			"path": "golang.org/x/crypto/md4",
+			"revision": "de0752318171da717af4ce24d0a2e8626afaeb11",
+			"revisionTime": "2018-08-08T16:52:45Z"
+		}
+	],
+	"rootPath": "github.com/erikvanbrakel/rds-sql-helper"
+}
