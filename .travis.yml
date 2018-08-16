@@ -1,7 +1,7 @@
 language: go
 
 go:
-  - 1.10
+  - 1.8
 
 go_import_path: github.com/erikvanbrakel/rds-mssql-helper
 
@@ -22,4 +22,4 @@ deploy:
   skip_cleanup: true
   on:
     tags: true
-    go: 1.10
+    go: 1.8
