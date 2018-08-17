@@ -45,22 +45,33 @@ func (c *StatusCommand) Execute(args []string) error {
 		return err
 	}
 
-	info := ""
-	if values[6].(*interface{}) != nil {
-		info = (*values[6].(*interface{})).(string)
-	}
-
 	status := TaskStatus{
 		Id:         c.TaskId,
-		Info:       info,
-		Status:     (*values[5].(*interface{})).(string),
-		Percentage: (*values[3].(*interface{})).(int64),
+		Info:       safeGetString(values[6].(*interface{})),
+		Status:     safeGetString(values[5].(*interface{})),
+		Percentage: safeGetInt(values[3].(*interface{})),
 	}
 
 	r, _ := json.Marshal(status)
 	fmt.Fprintf(os.Stdout, "%v\n", string(r))
 
 	return nil
+}
+
+func safeGetString(i *interface{}) string {
+	if *i == nil {
+		return ""
+	} else {
+		return (*i).(string)
+	}
+}
+
+func safeGetInt(i *interface{}) int64 {
+	if *i == nil {
+		return 0
+	} else {
+		return (*i).(int64)
+	}
 }
 
 type TaskStatus struct {
